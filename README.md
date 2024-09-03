@@ -50,7 +50,7 @@ To work efficiently with the PieScript .NET C# project in Visual Studio Code, yo
    - **ID**: `csharpextensions`
    - **Publisher**: C# Extensions
 
-2. **C# Extensions**: This extension installs and manages different versions of the .NET SDK and Runtime.
+2. **.NET Install Tool**: This extension installs and manages different versions of the .NET SDK and Runtime.
    - **ID**: `ms-dotnettools.vscode-dotnet-runtime`
    - **Publisher**: .NET Install Tool
 
