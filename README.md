@@ -53,6 +53,7 @@ The configuration settings are crucial for the script to function correctly. The
     "Content-Type": "application/json" // The content type for the HTTP request
   }
 }
+```
 
 ### Setting Up the Project
 
