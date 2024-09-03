@@ -37,6 +37,32 @@ To get started with the PieScript project, follow these instructions:
     code .
     ```
 
+
+### Required Extensions
+
+To work efficiently with the PieScript .NET C# project in Visual Studio Code, you should install the following extensions:
+
+1. **C#**: Provides rich support for C# development, including IntelliSense and debugging.
+   - **ID**: `ms-dotnettools.csharp`
+   - **Publisher**: Microsoft
+
+2. **.NET Core Test Explorer**: Allows you to run and debug .NET Core tests.
+   - **ID**: `formulahendry.dotnet-test-explorer`
+   - **Publisher**: formulahendry
+
+3. **NuGet Package Manager**: Provides integration with NuGet for managing packages.
+   - **ID**: `jmrog.vscode-nuget-package-manager`
+   - **Publisher**: jmrog
+
+4. **C# Extensions**: Adds useful features for C# development, such as code navigation and code generation.
+   - **ID**: `csharpextensions.csharp`
+   - **Publisher**: C# Extensions
+
+5. **Markdown All in One**: Enhances your experience when working with Markdown files.
+   - **ID**: `yzhang.markdown-all-in-one`
+   - **Publisher**: Yu Zhang
+
+
 ## Configuration Settings
 
 The configuration settings are crucial for the script to function correctly. They are defined in a JSON configuration file. Here is a description of each setting:
