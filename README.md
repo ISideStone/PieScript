@@ -37,29 +37,6 @@ To get started with the PieScript project, follow these instructions:
     code .
     ```
 
-### Setting Up the Project
-
-1. Ensure you have the necessary extensions installed in Visual Studio Code for C# development.
-2. Restore any required NuGet packages if applicable by running the following command in the terminal:
-
-    ```bash
-    dotnet restore
-    ```
-
-## `SendCode.ps1` File
-
-The `SendCode.ps1` file is a PowerShell script used to upload your trading scripts to a server. This script handles the communication between your local environment and the server where the trading scripts will be executed.
-
-### How to Use `SendCode.ps1`
-
-1. Open the `SendCode.ps1` file in a text editor.
-2. Configure the script with the appropriate settings (see below).
-3. Run the script using PowerShell:
-
-    ```powershell
-    .\SendCode.ps1
-    ```
-
 ## Configuration Settings
 
 The configuration settings are crucial for the script to function correctly. They are defined in a JSON configuration file. Here is a description of each setting:
@@ -76,3 +53,21 @@ The configuration settings are crucial for the script to function correctly. The
     "Content-Type": "application/json" // The content type for the HTTP request
   }
 }
+
+### Setting Up the Project
+
+1. Ensure you have the necessary extensions installed in Visual Studio Code for C# development.
+
+## `SendCode.ps1` File
+
+The `SendCode.ps1` file is a PowerShell script used to upload your trading scripts to a server. This script handles the communication between your local environment and the server where the trading scripts will be executed.
+
+### How to Use `SendCode.ps1`
+
+1. Open the `SendCode.ps1` file in a text editor.
+2. Configure the script with the appropriate settings (see below).
+3. Run the script using PowerShell:
+
+    ```powershell
+    .\SendCode.ps1
+    ```
