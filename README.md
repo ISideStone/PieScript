@@ -46,21 +46,13 @@ To work efficiently with the PieScript .NET C# project in Visual Studio Code, yo
    - **ID**: `ms-dotnettools.csharp`
    - **Publisher**: Microsoft
 
-2. **.NET Core Test Explorer**: Allows you to run and debug .NET Core tests.
-   - **ID**: `formulahendry.dotnet-test-explorer`
-   - **Publisher**: formulahendry
-
-3. **NuGet Package Manager**: Provides integration with NuGet for managing packages.
-   - **ID**: `jmrog.vscode-nuget-package-manager`
-   - **Publisher**: jmrog
-
-4. **C# Extensions**: Adds useful features for C# development, such as code navigation and code generation.
-   - **ID**: `csharpextensions.csharp`
+2. **C# Extensions**: Adds useful features for C# development, such as code navigation and code generation.
+   - **ID**: `csharpextensions`
    - **Publisher**: C# Extensions
 
-5. **Markdown All in One**: Enhances your experience when working with Markdown files.
-   - **ID**: `yzhang.markdown-all-in-one`
-   - **Publisher**: Yu Zhang
+2. **C# Extensions**: This extension installs and manages different versions of the .NET SDK and Runtime.
+   - **ID**: `ms-dotnettools.vscode-dotnet-runtime`
+   - **Publisher**: .NET Install Tool
 
 
 ## Configuration Settings
