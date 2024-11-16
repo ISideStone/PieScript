@@ -4,28 +4,24 @@ $csFilePath = "Program.cs"
 # Read the entire content of the file
 $csFileContent = Get-Content -Raw -Path $csFilePath
 
-# Define the marker after which the code will be extracted
-$marker = [regex]::Escape("/**** CODE PLACE ****/")
-
-# Extract the code after the marker
-$codeAfterMarker = $csFileContent -split $marker, 2 | Select-Object -Last 1
-
-# Check if $codeAfterMarker is null or empty
-if (-not $codeAfterMarker) {
-    Write-Error "The marker was not found in the file."
+# Verify if Program.cs file exists and has content
+if (-not $csFileContent) {
+    Write-Error "The Program.cs file could not be found or is empty."
     exit
 }
 
-# Trim any leading/trailing whitespace
-$codeAfterMarker = $codeAfterMarker.Trim()
-
-# Output the extracted code for verification
-Write-Output $codeAfterMarker
+# Output the content for verification
+Write-Output $csFileContent
 
 # Path to your appsettings.json file
 $appSettingsPath = "appsettings.json"
 
-# Read the appsettings.json file
+# Read the appsettings.json file and verify if it exists
+if (-not (Test-Path $appSettingsPath)) {
+    Write-Error "The appsettings.json file could not be found."
+    exit
+}
+
 $appSettings = Get-Content -Raw -Path $appSettingsPath | ConvertFrom-Json
 
 # Extract the Id from appsettings.json
@@ -34,7 +30,7 @@ $scriptId = $appSettings.Script.Data.Id
 # Construct the JSON payload
 $payload = @{
     Id = $scriptId
-    newScript = $codeAfterMarker
+    newScript = $csFileContent
 } | ConvertTo-Json
 
 # Convert the headers from JSON to a hashtable

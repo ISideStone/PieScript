@@ -12,7 +12,7 @@ public class ManipulationLanguageModelAbstract
 
     /*PRICE TRENDS*/
 
-    public static dynamic[] atrStop(int lookbackPeriods = 21, double multiplier = 3.0, EndType endType = EndType.Close) => throw new NotImplementedException();
+    public static AtrStopResultValue[] atrStop(int lookbackPeriods = 21, double multiplier = 3.0, EndType endType = EndType.Close) => throw new NotImplementedException();
     public static AroonResult[] aroon(int lookbackPeriods = 21) => throw new NotImplementedException();
     public static AdxResult[] adx(int lookbackPeriods = 21) => throw new NotImplementedException();
     public static ElderRayResult[] elderRay(int lookbackPeriods = 13) => throw new NotImplementedException();
@@ -20,7 +20,7 @@ public class ManipulationLanguageModelAbstract
     public static HurstResult[] hurst(int lookbackPeriods = 100) => throw new NotImplementedException();
     public static IchimokuResultValue[] ichimoku(int tenkanPeriods = 9, int kijunPeriods = 26, int senkouBPeriods = 52) => throw new NotImplementedException();
     public static MacdResult[] macd(int fastPeriods = 12, int slowPeriods = 26, int signalPeriods = 9) => throw new NotImplementedException();
-    public static dynamic/*SuperTrendResult*/[] superTrend(int lookbackPeriods = 10, double multiplier = 3.0) => throw new NotImplementedException();
+    public static SuperTrendResultValue[] superTrend(int lookbackPeriods = 10, double multiplier = 3.0) => throw new NotImplementedException();
     public static VortexResult[] vortex(int lookbackPeriods = 11) => throw new NotImplementedException();
     public static AlligatorResult[] aligator(int jawPeriods = 13, int jawOffset = 8, int teethPeriods = 8, int teethOffset = 5, int lipsPeriods = 5, int lipsOffset = 3) => throw new NotImplementedException();
 
@@ -29,12 +29,12 @@ public class ManipulationLanguageModelAbstract
     /*PRICE CHANNELS*/
 
     public static BollingerBandsResult[] bb(int lookbackPeriods = 20, double standardDeviations = 2.0) => throw new NotImplementedException();
-    public static dynamic/*DonchianResult*/[] donchian(int lookbackPeriods = 20) => throw new NotImplementedException();
-    public static dynamic/*FcbResult*/[] fcb(int windowSpan = 2) => throw new NotImplementedException();
+    public static DonchianResultValue[] donchian(int lookbackPeriods = 20) => throw new NotImplementedException();
+    public static FcbResultValue[] fcb(int windowSpan = 2) => throw new NotImplementedException();
     public static KeltnerResult[] kelther(int emaPeriods = 20, double multiplier = 2.0, int atrPeriods = 10) => throw new NotImplementedException();
     public static MaEnvelopeResult[] maEnvelop(int lookbackPeriods = 21, double percentOffset = 2.5, MaType movingAverageType = MaType.SMA) => throw new NotImplementedException();
-    public static dynamic/*PivotPointsResult*/[] pivotPoints(PeriodSize windowSize = PeriodSize.OneHour, PivotPointType pointType = PivotPointType.Standard) => throw new NotImplementedException();
-    public static dynamic/*RollingPivotsResult*/[] rollingPivot(int windowPeriods = 2, int offsetPeriods = 2, PivotPointType pointType = PivotPointType.Standard) => throw new NotImplementedException();
+    public static PivotPointsResultValue[] pivotPoints(PeriodSize windowSize = PeriodSize.OneHour, PivotPointType pointType = PivotPointType.Standard) => throw new NotImplementedException();
+    public static RollingPivotsResultValue[] rollingPivot(int windowPeriods = 2, int offsetPeriods = 2, PivotPointType pointType = PivotPointType.Standard) => throw new NotImplementedException();
     public static StarcBandsResult[] starcBands(int smaPeriods, double multiplier = 2.0, int atrPeriods = 10) => throw new NotImplementedException();
     public static StdDevChannelsResult[] stdDevChannel(int lookbackPeriods = 20, double stdDeviations = 2.0) => throw new NotImplementedException();
 
@@ -71,9 +71,9 @@ public class ManipulationLanguageModelAbstract
 
     /*OTHER PRICE PATTERNS*/
 
-    public static dynamic/*PivotsResult*/[] pivots(int leftSpan = 2, int rightSpan = 2, int maxTrendPeriods = 20, EndType endType = EndType.HighLow) => throw new NotImplementedException();
+    public static PivotsResultValue[] pivots(int leftSpan = 2, int rightSpan = 2, int maxTrendPeriods = 20, EndType endType = EndType.HighLow) => throw new NotImplementedException();
 
-    public static dynamic/*FractalResult*/[] fractal(int windowSpan = 2, EndType endType = EndType.HighLow) => throw new NotImplementedException();
+    public static FractalResultValue[] fractal(int windowSpan = 2, EndType endType = EndType.HighLow) => throw new NotImplementedException();
 
     /**/
 
